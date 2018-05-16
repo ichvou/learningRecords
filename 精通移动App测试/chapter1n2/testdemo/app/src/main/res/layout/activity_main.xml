@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a37616.testdemo.MainActivity">
+    <EditText
+        android:id="@+id/edtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="number"
+        >
+<!--        <requestFocus />-->
+        </EditText>
+
+    <EditText
+        android:id="@+id/edtnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtnum1"
+        android:layout_below="@+id/edtnum1"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="number"
+        >
+    </EditText>
+    <TextView
+        android:id="@+id/txtnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/edtnum2"
+        android:layout_toLeftOf="@id/edtnum2"
+        android:text="@string/num2"/>
+    <TextView
+        android:id="@+id/txtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edtnum2"
+        android:layout_alignLeft="@id/txtnum2"
+        android:text="@string/num1"/>
+
+    <Button
+        android:id="@+id/btncalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtnum2"
+        android:layout_below="@id/edtnum2"
+        android:layout_marginTop="70dp"
+        android:text="@string/calc"/>
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btncalc"
+        android:layout_alignBottom="@+id/btncalc"
+        android:layout_alignRight="@+id/edtnum2"
+        android:text="@string/exit"/>
+</RelativeLayout>
